@@ -3,13 +3,14 @@
 
 // but you don't so you're going to write it from scratch:
 
-var stringifyJSON = function(obj, keysArray) {
+var stringifyJSON = function(obj) {
   // your code goes here
   //Strategy: take in element and return a string of the element's values in their original formats. Recurse over element and check type of each item. If it is a stringifiable array or object then we recurse.
 
   //if function || if null
-  if ()
+  if (typeof obj === 'function' || typeof obj === 'null') {
     //return 'null'
+  }
   //else if typeof el integer || typeof el boolean || typeof el string
     //return 'el'
   // else if Array.isArray(obj) && obj.length === 0
